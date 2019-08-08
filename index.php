@@ -1,4 +1,4 @@
-<?php define('VERSION', 14); ?>
+<?php define('VERSION', 15); ?>
 <!doctype html>
 <html>
   <head>
