@@ -1,4 +1,5 @@
-<?php define('VERSION', 20); ?>
+<?php define('VERSION', 21); ?>
+<?php $site = file_get_contents('/home/ubuntu/site.txt'); ?>
 <!doctype html>
 <html>
   <head>
@@ -30,6 +31,8 @@
     <dl>
       <dt>Version</dt>
       <dd><?php print VERSION; ?></dd>
+      <dt>Site</dt>
+      <dd><?php print $site; ?></dd>
     </dl>
     <p>This is a test.</p>
     <pre>
