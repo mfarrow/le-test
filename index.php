@@ -1,6 +1,7 @@
-<?php define('VERSION', 22); ?>
+<?php define('VERSION', 23); ?>
 <?php $site = file_get_contents('/home/ubuntu/site.txt'); ?>
 <?php $commit = file_get_contents('/home/ubuntu/commit.txt'); ?>
+<?php $asg_ami = file_get_contents('/home/ubuntu/asg_ami.txt'); ?>
 <!doctype html>
 <html>
   <head>
@@ -36,6 +37,8 @@
       <dd><?php print $site; ?></dd>
       <dt>Commit</dt>
       <dd><?php print $commit; ?></dd>
+      <dt>AMI</dt>
+      <dd><?php print $asg_ami; ?></dd>
     </dl>
     <p>This is a test.</p>
     <pre>
