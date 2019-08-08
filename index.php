@@ -41,6 +41,7 @@
       <dd><?php print $asg_ami; ?></dd>
     </dl>
     <p>This is a test.</p>
+    <img src="/shared-files/logo.png">
     <pre>
       <?php var_dump($_SERVER); ?>
     </pre>
