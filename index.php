@@ -1,5 +1,6 @@
-<?php define('VERSION', 21); ?>
+<?php define('VERSION', 22); ?>
 <?php $site = file_get_contents('/home/ubuntu/site.txt'); ?>
+<?php $commit = file_get_contents('/home/ubuntu/commit.txt'); ?>
 <!doctype html>
 <html>
   <head>
@@ -33,6 +34,8 @@
       <dd><?php print VERSION; ?></dd>
       <dt>Site</dt>
       <dd><?php print $site; ?></dd>
+      <dt>Commit</dt>
+      <dd><?php print $commit; ?></dd>
     </dl>
     <p>This is a test.</p>
     <pre>
