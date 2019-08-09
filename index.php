@@ -1,7 +1,8 @@
-<?php define('VERSION', 27); ?>
+<?php define('VERSION', 28); ?>
 <?php $site = file_get_contents('/home/ubuntu/site.txt'); ?>
 <?php $commit = file_get_contents('/home/ubuntu/commit.txt'); ?>
 <?php $asg_ami = file_get_contents('/home/ubuntu/asg_ami.txt'); ?>
+<?php $s3 = file_get_contents('/home/ubuntu/s3.txt'); ?>
 <!doctype html>
 <html>
   <head>
@@ -48,6 +49,8 @@
       <dd><?php print $commit; ?></dd>
       <dt>AMI</dt>
       <dd><?php print $asg_ami; ?></dd>
+      <dt>S3 file</dt>
+      <dd><?php print file_get_contents(sprintf('https://%s/%s', $s3, 'test1.txt')); ?></dd>
     </dl>
     <p>This is a test.</p>
     <pre>
