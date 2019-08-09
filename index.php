@@ -1,6 +1,7 @@
-<?php define('VERSION', 31); ?>
+<?php define('VERSION', 32); ?>
 <?php $site = file_get_contents('/home/ubuntu/site.txt'); ?>
 <?php $commit = file_get_contents('/home/ubuntu/commit.txt'); ?>
+<?php $git_tag = file_get_contents('/home/ubuntu/git-tag.txt'); ?>
 <?php $asg_ami = file_get_contents('/home/ubuntu/asg_ami.txt'); ?>
 <?php $s3 = file_get_contents('/home/ubuntu/s3.txt'); ?>
 <?php $s3_url = sprintf('https://%s/%s', trim($s3), 'test1.txt'); ?>
@@ -48,6 +49,8 @@
       <dd><?php print VERSION; ?></dd>
       <dt>Site</dt>
       <dd><?php print $site; ?></dd>
+      <dt>Git tag</dt>
+      <dd><?php print $git_tag; ?></dd>
       <dt>Commit</dt>
       <dd><?php print $commit; ?></dd>
       <dt>AMI</dt>
