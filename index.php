@@ -1,4 +1,4 @@
-<?php define('VERSION', 30); ?>
+<?php define('VERSION', 31); ?>
 <?php $site = file_get_contents('/home/ubuntu/site.txt'); ?>
 <?php $commit = file_get_contents('/home/ubuntu/commit.txt'); ?>
 <?php $asg_ami = file_get_contents('/home/ubuntu/asg_ami.txt'); ?>
@@ -10,7 +10,9 @@
     <title>Test version <?php print VERSION; ?></title>
     <style>
       body {
-        margin-top: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        max-width: 1185px;
         padding-top: 0;
       }
       dl {
@@ -39,7 +41,7 @@
   </head>
   <body>
     <img src="/shared-files/le_header_1x_0.jpg" id="header">
-    <h1>Test version <?php print VERSION; ?></h1>
+    <h1>LondonElects 2020 Test - version <?php print VERSION; ?></h1>
 
     <dl>
       <dt>Version</dt>
@@ -54,8 +56,10 @@
       <dd><?php print $s3_url; ?></dd>
       <dt>S3 file content</dt>
       <dd><?php print file_get_contents($s3_url); ?></dd>
+      <dt>Server IP address</dt>
+      <dd><?php print $_SERVER["SERVER_ADDR"]; ?></dd>
     </dl>
-    <p>This is a test.</p>
+    <h2>Server variables</h2>
     <pre>
       <?php var_dump($_SERVER); ?>
     </pre>
