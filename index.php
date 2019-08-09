@@ -1,4 +1,4 @@
-<?php define('VERSION', 24); ?>
+<?php define('VERSION', 26); ?>
 <?php $site = file_get_contents('/home/ubuntu/site.txt'); ?>
 <?php $commit = file_get_contents('/home/ubuntu/commit.txt'); ?>
 <?php $asg_ami = file_get_contents('/home/ubuntu/asg_ami.txt'); ?>
