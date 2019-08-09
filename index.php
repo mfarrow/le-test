@@ -1,4 +1,4 @@
-<?php define('VERSION', 29); ?>
+<?php define('VERSION', 30); ?>
 <?php $site = file_get_contents('/home/ubuntu/site.txt'); ?>
 <?php $commit = file_get_contents('/home/ubuntu/commit.txt'); ?>
 <?php $asg_ami = file_get_contents('/home/ubuntu/asg_ami.txt'); ?>
@@ -20,7 +20,7 @@
       dt {
         float: left;
         clear: left;
-        width: 100px;
+        width: 150px;
         text-align: right;
         font-weight: bold;
         color: green;
@@ -29,7 +29,7 @@
         content: ":";
       }
       dd {
-        margin: 0 0 0 110px;
+        margin: 0 0 0 170px;
         padding: 0 0 0.5em 0;
       }
       #header {
