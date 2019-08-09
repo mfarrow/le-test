@@ -38,6 +38,7 @@
   <body>
     <img src="/shared-files/le_header_1x_0.jpg" id="header">
     <h1>Test version <?php print VERSION; ?></h1>
+
     <dl>
       <dt>Version</dt>
       <dd><?php print VERSION; ?></dd>
