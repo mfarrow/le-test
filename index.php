@@ -1,4 +1,4 @@
-<?php define('VERSION', 32); ?>
+<?php define('VERSION', 33); ?>
 <?php $site = file_get_contents('/home/ubuntu/site.txt'); ?>
 <?php $commit = file_get_contents('/home/ubuntu/commit.txt'); ?>
 <?php $git_tag = file_get_contents('/home/ubuntu/git-tag.txt'); ?>
